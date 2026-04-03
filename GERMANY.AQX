@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="9">
+ 
+  <name>Germany per state NMA Maps</name>
+  
+  <description>Topographic maps of the mapping agencies of Germany for a selection of the states.</description>
+
+  <source id="hedtk">
+
+    <name>DTK Hessen Map</name>
+
+    <description><![CDATA[<html><b><a href="https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/LVERMGEOSH/LVermGeoShBilderPdf/pdfUebersichten/lvermGeoAmtlKartenTopKartenTk25NeuLegende.pdf?__blob=publicationFile&v=2">Map legend download</a></b>
+    <p><i>NB: No hill-shading</i>
+    <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportal.hessen.de/]]></data-source>
+
+    <copyright>Hessische Verwaltung</copyright>
+	
+	<region>EURO</region>
+
+    <type>Topo</type>
+
+	<outline>9.012399,51.795262 10.122018,51.665976 10.561471,51.172693 10.275826,50.457745 9.199166,49.303883 8.188424,49.253712 7.485299,50.099684</outline>
+	
+	<preview-location>8.04,50.08,14</preview-location>
+    
+    <zoom-levels z="6,7,8,9,10">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+                        
+    </zoom-levels>
+
+    <zoom-levels z="11">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="12">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="13">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-maps.ows?language=ger&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=true&LAYERS=he_dtk100&SINGLETILE=true&WIDTH=256&HEIGHT=256&SRS=EPSG%3A3857&BBOX={$bbox}]]></server>
+                             
+    </zoom-levels>
+
+    <zoom-levels z="14">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-maps.ows?language=ger&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=true&LAYERS=he_dtk50&SINGLETILE=true&WIDTH=256&HEIGHT=256&SRS=EPSG%3A3857&BBOX={$bbox}]]></server>
+                       
+    </zoom-levels>
+
+    <zoom-levels z="15,16">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-maps.ows?language=ger&REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=true&LAYERS=he_dtk25&SINGLETILE=true&WIDTH=256&HEIGHT=256&SRS=EPSG%3A3857&BBOX={$bbox}]]></server>
+     
+    </zoom-levels>
+
+  </source>
+
+  <source id="nrwdtk">
+
+    <name>DTK Nordrhein-Westfalen Map</name>
+
+    <description><![CDATA[<html><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col">Map legend download</a></b>
+    <p><i>NB: No hill-shading</i>
+    <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportal.nrw/]]></data-source>
+
+    <copyright>Geobasis NRW</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>5.779886,51.0666534 6.1463192,51.4043869 5.8167294,51.8476965 7.6123301,52.5105101 8.2028452,52.2775412 8.2715098,52.495463 8.7384287,52.5856684 9.2218271,52.5121817 9.1751353,52.2304633 9.5816294,51.8299787 9.4360605,51.4909323 8.9251963,51.2886904 8.7027231,51.0374554 8.1204478,50.6321572 7.8348032,50.7522118 6.8375537,50.3022098 6.31021,50.3004554 5.942168,50.782211 5.779886,51.0666534</outline>
+
+    <preview-location>7.49,51.24,14</preview-location>
+
+    <zoom-levels z="6,7,8,9,10">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="11">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="12">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="13,14,15,16,17,18">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[http://www.wms.nrw.de/geobasis/wms_nw_dtk?LAYERS=nw_dtk_col&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG:3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="rlpdtk">
+    
+    <name>DTK Rheinland-Pfalz Map</name>
+    
+    <description><![CDATA[<html><b><a href="http://www.vermkv.service24.rlp.de/opendat/DTK25_Legende.png">Map legend download</a></b>
+    <p><i>NB: No hill-shading</i>
+    <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
+
+    <data-source><![CDATA[http://geo4.service24.rlp.de/client/geobasisviewer/]]></data-source>
+	
+    <copyright>LVermGeo</copyright>
+	
+    <region>EURO</region>
+    
+    <type>Topo</type>
+	
+    <outline>6.127327,50.3248153 7.7859768,51.0051857 8.2226833,50.6164325 8.1869778,50.125934 8.5879787,49.745855 8.5660061,49.3162448 8.2858547,48.9009128 7.2313294,49.0938533 7.2093568,49.4986564 7.0033631,49.5895462 6.5913758,49.4861681 6.294745,49.527189 6.3634095,49.7743665 6.0283265,50.0061697 6.127327,50.3248153</outline>
+
+    <preview-location>6.90,49.82,14</preview-location>
+
+    <zoom-levels z="6,7,8,9,10">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="11">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="12">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="13,14,15,16">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[http://geo4.service24.rlp.de/wms/dtk_basis.fcgi?TRANSPARENT=true&LAYERS=rp_dtk&FORMAT=image/png&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG:3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+
+    </zoom-levels>
+  
+  </source>
+  
+  <source id="rlpsch" layer="true">
+    
+    <name>Hillshade Rheinland-Pfalz</name>
+    
+    <description><![CDATA[<html>Schummerung (SHADE) - Dienst für Schummerung der Vermessungs- und Katasterverwaltung Rheinland-Pfalz mit einer Bodenauflösung von 1 m.</html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportal.rlp.de/]]></data-source>
+	
+    <copyright>LVermGeo</copyright>
+	
+    <region>EURO</region>
+    
+    <type>Hillshade</type>
+	
+    <outline>6.127327,50.3248153 7.7859768,51.0051857 8.2226833,50.6164325 8.1869778,50.125934 8.5879787,49.745855 8.5660061,49.3162448 8.2858547,48.9009128 7.2313294,49.0938533 7.2093568,49.4986564 7.0033631,49.5895462 6.5913758,49.4861681 6.294745,49.527189 6.3634095,49.7743665 6.0283265,50.0061697 6.127327,50.3248153</outline>
+
+    <preview-location>6.90,49.82,14</preview-location>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://geo4.service24.rlp.de/wms/shade1m.fcgi?VERSION=1.1.1&REQUEST=GetMap&SERVICE=WMS&LAYERS=rp_shade1m&STYLES=&SRS=EPSG:3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256&FORMAT=image/png&BGCOLOR=0xffffff&TRANSPARENT=TRUE&EXCEPTIONS=application/vnd.ogc.se_xml]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+</aqx>
