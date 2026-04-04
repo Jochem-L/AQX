@@ -9,13 +9,13 @@
 
     <name>DTK Hessen Map</name>
 
-    <description><![CDATA[<html><b><a href="https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/LVERMGEOSH/LVermGeoShBilderPdf/pdfUebersichten/lvermGeoAmtlKartenTopKartenTk25NeuLegende.pdf?__blob=publicationFile&v=2">Map legend download</a></b>
-    <p><i>NB: No hill-shading</i>
+    <description><![CDATA[<html><a href="https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-maps.ows?language=ger&REQUEST=GetLegendGraphic&SERVICE=WMS&VERSION=1.1.1&format=image/png&layer=he_dtk25">Map legend download</a> <b>unavailable</b>, use: 
+    <p><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col">Map legend download</a></b>    
     <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
 
     <data-source><![CDATA[https://www.geoportal.hessen.de/]]></data-source>
 
-    <copyright>Hessische Verwaltung</copyright>
+    <copyright>Hessische Verwaltung & BKG</copyright>
 	
 	<region>EURO</region>
 
@@ -92,12 +92,11 @@
     <name>DTK Nordrhein-Westfalen Map</name>
 
     <description><![CDATA[<html><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col">Map legend download</a></b>
-    <p><i>NB: No hill-shading</i>
     <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
 
     <data-source><![CDATA[https://www.geoportal.nrw/]]></data-source>
 
-    <copyright>Geobasis NRW</copyright>
+    <copyright>Geobasis NRW & BKG</copyright>
 
     <region>EURO</region>
 
@@ -154,12 +153,11 @@
     <name>DTK Rheinland-Pfalz Map</name>
     
     <description><![CDATA[<html><b><a href="http://www.vermkv.service24.rlp.de/opendat/DTK25_Legende.png">Map legend download</a></b>
-    <p><i>NB: No hill-shading</i>
     <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
 
     <data-source><![CDATA[http://geo4.service24.rlp.de/client/geobasisviewer/]]></data-source>
 	
-    <copyright>LVermGeo</copyright>
+    <copyright>LVermGeo & BKG</copyright>
 	
     <region>EURO</region>
     
