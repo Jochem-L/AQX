@@ -152,7 +152,8 @@
     
     <name>DTK Rheinland-Pfalz Map</name>
     
-    <description><![CDATA[<html><b><a href="http://www.vermkv.service24.rlp.de/opendat/DTK25_Legende.png">Map legend download</a></b>
+    <description><![CDATA[<html><a href="https://geo4.service24.rlp.de/wms/dtk_basis.fcgi?REQUEST=GetLegendGraphic&SERVICE=WMS&VERSION=1.1.1&format=image/png&LAYER=rp_dtk">Map legend download</a> <b>unavailable</b>, use: 
+    <p><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col">Map legend download</a></b>    
     <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
 
     <data-source><![CDATA[http://geo4.service24.rlp.de/client/geobasisviewer/]]></data-source>
