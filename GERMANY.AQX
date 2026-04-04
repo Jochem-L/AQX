@@ -3,7 +3,7 @@
  
   <name>Germany per state NMA Maps</name>
   
-  <description>Topographic maps of the mapping agencies of Germany for a selection of the states.</description>
+  <description>Topographic maps and hillshades of the mapping agencies of Germany for a selection of the states.</description>
 
   <source id="hedtk">
 
@@ -25,13 +25,13 @@
 	
 	<preview-location>8.04,50.08,14</preview-location>
     
-    <zoom-levels z="6,7,8,9,10">
+    <zoom-levels z="3,4,5,6,7,8,9,10">
 
       <update-delay>6M</update-delay>
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
                         
     </zoom-levels>
 
@@ -41,7 +41,7 @@
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -51,7 +51,7 @@
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -94,7 +94,7 @@
     <description><![CDATA[<html><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col">Map legend download</a></b>
     <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
 
-    <data-source><![CDATA[https://www.geoportal.nrw/]]></data-source>
+    <data-source><![CDATA[https://www.geoportal.de/]]></data-source>
 
     <copyright>Geobasis NRW & BKG</copyright>
 
@@ -106,13 +106,13 @@
 
     <preview-location>7.49,51.24,14</preview-location>
 
-    <zoom-levels z="6,7,8,9,10">
+    <zoom-levels z="3,4,5,6,7,8,9,10">
 
       <update-delay>6M</update-delay>
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -122,7 +122,7 @@
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -132,7 +132,7 @@
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -156,7 +156,7 @@
     <p><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col">Map legend download</a></b>    
     <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
 
-    <data-source><![CDATA[http://geo4.service24.rlp.de/client/geobasisviewer/]]></data-source>
+    <data-source><![CDATA[https://maps.rlp.de/]]></data-source>
 	
     <copyright>LVermGeo & BKG</copyright>
 	
@@ -168,13 +168,13 @@
 
     <preview-location>6.90,49.82,14</preview-location>
 
-    <zoom-levels z="6,7,8,9,10">
+    <zoom-levels z="3,4,5,6,7,8,9,10">
 
       <update-delay>6M</update-delay>
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -184,7 +184,7 @@
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -194,7 +194,7 @@
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
-      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=FALSE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
+      <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK250&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
 
     </zoom-levels>
 
@@ -210,11 +210,71 @@
   
   </source>
   
+  <source id="nrwschnw" layer="true">
+    
+    <name>Hillshade Nordrhein-Westfalen NW</name>
+    
+    <description><![CDATA[<html>Eine Schummerung ist die plastische Wiedergabe der Geländeformen in einem Farb- oder Graustufenbild. Der räumliche Eindruck entsteht durch die Beleuchtung mit einer imaginären Lichtquelle. Die hd-Schummerung ist die Visualisierung eines hochaufgelösten Digitalen Geländemodells (DGM). Ein Pixel im Schummerungsbild entspricht <b>0,25 m x 0,25 m</b> auf der Erdoberfläche. Objekte wie Gebäude und Vegetation werden nicht dargestellt, da das DGM die natürliche Geländeform der Erdoberfläche beschreibt. Bei der hd-Schummerung befindet sich die imaginäre Lichtquelle im <b>Nordwesten</b>. Eine Erhebung erscheint am Nordwesthang hell und am Südosthang dunkel. Ebenen sind mit mittlerer Helligkeit gefärbt. Dadurch wird ausgedrückt, wie stark die Oberfläche der Lichtquelle zugewandt ist. Mittels der DGM1-Schummerung kann die natürliche Geländeform sehr plastisch dargestellt werden. Nutzungsmöglichkeiten sind beispielsweise die Zusammenführung mit weiteren Geobasis- und/oder Geofachdaten (z. B. Präsentation mit Freizeitinformationen), sowie die Überlagerung mit Digitalen Topographischen Karten oder Digitalen Orthophotos zur Erzeugung eines plastischen Geländeeindrucks. Ebenso können die Daten als Grundlage für die Raumplanung, Geomorphologische Analysen, sowie der Aufdeckung von Geländestrukturen historischer Bauwerke (z. B. Römerstraßen oder Festungswälle) genutzt werden. Die hd-Schummerung liegt nicht flächendeckend für NRW vor. Sie ist für die Teile des Landes verfügbar, für die eine Messpunktdichte des Airborne-Laserscanning von 4 Punkten pro Quadratmeter vorhanden ist (siehe Metadateninformation 'Punkte pro qm')</html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportal.de/]]></data-source>
+	
+    <copyright>Geobasis NRW</copyright>
+	
+    <region>EURO</region>
+    
+    <type>Hillshade</type>
+	
+    <outline>5.779886,51.0666534 6.1463192,51.4043869 5.8167294,51.8476965 7.6123301,52.5105101 8.2028452,52.2775412 8.2715098,52.495463 8.7384287,52.5856684 9.2218271,52.5121817 9.1751353,52.2304633 9.5816294,51.8299787 9.4360605,51.4909323 8.9251963,51.2886904 8.7027231,51.0374554 8.1204478,50.6321572 7.8348032,50.7522118 6.8375537,50.3022098 6.31021,50.3004554 5.942168,50.782211 5.779886,51.0666534</outline>
+
+    <preview-location>7.49,51.24,14</preview-location>
+
+    <zoom-levels z="3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://www.wms.nrw.de/geobasis/wms_nw_dgm-schummerung?language=ger&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=true&LAYERS=nw_dgm-schummerung_pan&SINGLETILE=true&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+  </source>
+  
+  <source id="nrwschne" layer="true">
+    
+    <name>Hillshade Nordrhein-Westfalen NE</name>
+    
+    <description><![CDATA[<html>Eine Schummerung ist die plastische Wiedergabe der Geländeformen in einem Farb- oder Graustufenbild. Der räumliche Eindruck entsteht durch die Beleuchtung mit einer imaginären Lichtquelle. Die hd-Schummerung ist die Visualisierung eines hochaufgelösten Digitalen Geländemodells (DGM). Ein Pixel im Schummerungsbild entspricht <b>0,25 m x 0,25 m</b> auf der Erdoberfläche. Objekte wie Gebäude und Vegetation werden nicht dargestellt, da das DGM die natürliche Geländeform der Erdoberfläche beschreibt. Bei der hd-Schummerung befindet sich die imaginäre Lichtquelle im <b>Nordosten</b>. Eine Erhebung erscheint am Nordosthang hell und am Südwesthang dunkel. Ebenen sind mit mittlerer Helligkeit gefärbt. Dadurch wird ausgedrückt, wie stark die Oberfläche der Lichtquelle zugewandt ist. Mittels der DGM1-Schummerung kann die natürliche Geländeform sehr plastisch dargestellt werden. Nutzungsmöglichkeiten sind beispielsweise die Zusammenführung mit weiteren Geobasis- und/oder Geofachdaten (z. B. Präsentation mit Freizeitinformationen), sowie die Überlagerung mit Digitalen Topographischen Karten oder Digitalen Orthophotos zur Erzeugung eines plastischen Geländeeindrucks. Ebenso können die Daten als Grundlage für die Raumplanung, Geomorphologische Analysen, sowie der Aufdeckung von Geländestrukturen historischer Bauwerke (z. B. Römerstraßen oder Festungswälle) genutzt werden. Die hd-Schummerung liegt nicht flächendeckend für NRW vor. Sie ist für die Teile des Landes verfügbar, für die eine Messpunktdichte des Airborne-Laserscanning von 4 Punkten pro Quadratmeter vorhanden ist (siehe Metadateninformation 'Punkte pro qm')</html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportal.de/]]></data-source>
+	
+    <copyright>Geobasis NRW</copyright>
+	
+    <region>EURO</region>
+    
+    <type>Hillshade</type>
+	
+    <outline>5.779886,51.0666534 6.1463192,51.4043869 5.8167294,51.8476965 7.6123301,52.5105101 8.2028452,52.2775412 8.2715098,52.495463 8.7384287,52.5856684 9.2218271,52.5121817 9.1751353,52.2304633 9.5816294,51.8299787 9.4360605,51.4909323 8.9251963,51.2886904 8.7027231,51.0374554 8.1204478,50.6321572 7.8348032,50.7522118 6.8375537,50.3022098 6.31021,50.3004554 5.942168,50.782211 5.779886,51.0666534</outline>
+
+    <preview-location>7.49,51.24,14</preview-location>
+
+    <zoom-levels z="3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <update-delay>6M</update-delay>
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <server><![CDATA[https://www.wms.nrw.de/geobasis/wms_nw_dgm-schummerung?language=ger&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=true&LAYERS=nw_dgm-schummerung_pan_ne&SINGLETILE=true&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+  </source>
+  
   <source id="rlpsch" layer="true">
     
     <name>Hillshade Rheinland-Pfalz</name>
     
-    <description><![CDATA[<html>Schummerung (SHADE) - Dienst für Schummerung der Vermessungs- und Katasterverwaltung Rheinland-Pfalz mit einer Bodenauflösung von 1 m.</html>]]></description>
+    <description><![CDATA[<html>Schummerung (SHADE) - Dienst für Schummerung der Vermessungs- und Katasterverwaltung Rheinland-Pfalz mit einer Bodenauflösung von <b>1 m</b>.</html>]]></description>
 
     <data-source><![CDATA[https://www.geoportal.rlp.de/]]></data-source>
 	
@@ -228,7 +288,7 @@
 
     <preview-location>6.90,49.82,14</preview-location>
 
-    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17,18">
+    <zoom-levels z="3,4,5,6,7,8,9,10,11,12,13,14,15,16,17">
 
       <update-delay>6M</update-delay>
 
