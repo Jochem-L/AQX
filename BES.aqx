@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="9">
+
+  <name>Caribbean Netherlands</name>
+
+  <description>Aerial imagery and lidar data</description>
+
+  <source id="Bonaire">
+
+    <name>Bonaire True Ortho RGB</name>
+
+	<description><![CDATA[<html>Rond de jaarwisseling ’23 – ’24 zijn LiDAR- en luchtfoto’s van Saba en St. Eustatius gemaakt vergelijkbaar met het Actueel Hoogtebestand Nederland en Beeldmateriaal in Europees Nederland. Op Bonaire is zijn wel LiDAR-metingen verricht, maar is het door aanhoudende bewolking niet gelukt foto’s van het hele eiland te maken. In het najaar van ’24 is Bonaire alsnog ingewonnen.</html>]]></description>
+    
+    <data-source><![CDATA[https://www.beeldmateriaal.nl/dataroom-caribisch-nederland/]]></data-source>
+
+    <copyright>Beeldmateriaal Nederland</copyright>
+
+    <type>Satellite</type>
+
+    <preview-location>-68.3833,12.2500,16</preview-location>
+
+    <zoom-levels z="8,9,10,11,12,13,14,15,16,17,18,19,20,21,22">
+
+      <update-delay>None</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://api.ellipsis-drive.com/v3/ogc/wmts/7c562d01-08eb-46a5-87c9-af76a8b24f43?version=1.0.0&layer=2025-05-21_0_rgb&style=default&tilematrixset=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A3857&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="Statia">
+
+    <name>St. Eustatius True Ortho RGB</name>
+
+	<description><![CDATA[<html>Rond de jaarwisseling ’23 – ’24 zijn LiDAR- en luchtfoto’s van Saba en St. Eustatius gemaakt vergelijkbaar met het Actueel Hoogtebestand Nederland en Beeldmateriaal in Europees Nederland. Op Bonaire is zijn wel LiDAR-metingen verricht, maar is het door aanhoudende bewolking niet gelukt foto’s van het hele eiland te maken. In het najaar van ’24 is Bonaire alsnog ingewonnen.</html>]]></description>
+    
+    <data-source><![CDATA[https://www.beeldmateriaal.nl/dataroom-caribisch-nederland/]]></data-source>
+
+    <copyright>Beeldmateriaal Nederland</copyright>
+
+    <type>Satellite</type>
+
+    <preview-location>-62.9599,17.4766,16</preview-location>
+
+    <zoom-levels z="8,9,10,11,12,13,14,15,16,17,18,19,20,21,22">
+
+      <update-delay>None</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://api.ellipsis-drive.com/v3/ogc/wmts/d80f2623-2ff6-49d5-827e-8c2f2f1fa48c?version=1.0.0&layer=2025-05-21_0_rgb&style=default&tilematrixset=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A3857&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="Saba">
+
+    <name>Saba True Ortho RGB</name>
+
+	<description><![CDATA[<html>Rond de jaarwisseling ’23 – ’24 zijn LiDAR- en luchtfoto’s van Saba en St. Eustatius gemaakt vergelijkbaar met het Actueel Hoogtebestand Nederland en Beeldmateriaal in Europees Nederland. Op Bonaire is zijn wel LiDAR-metingen verricht, maar is het door aanhoudende bewolking niet gelukt foto’s van het hele eiland te maken. In het najaar van ’24 is Bonaire alsnog ingewonnen.</html>]]></description>
+    
+    <data-source><![CDATA[https://www.beeldmateriaal.nl/dataroom-caribisch-nederland/]]></data-source>
+
+    <copyright>Beeldmateriaal Nederland</copyright>
+
+    <type>Satellite</type>
+
+    <preview-location>-63.2372,17.6355,16</preview-location>
+
+    <zoom-levels z="8,9,10,11,12,13,14,15,16,17,18,19,20,21,22">
+
+      <update-delay>None</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://api.ellipsis-drive.com/v3/ogc/wmts/111de913-5126-4ad9-9ad4-c02f21903417?version=1.0.0&layer=2025-05-21_0_rgb&style=default&tilematrixset=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A3857&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+</aqx>
