@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="11">
+
+<name>Netherlands PDOK Maps extra</name>
+
+  <description>Additional topographic maps and other public data of Dutch organisations distributed by PDOK et al. For map legend of a layer, go to Details.</description><!-- aqx file by Jochem -->
+
+  <source id="pastel">
+
+    <name>BRT/BGT Map (pale colours)</name>
+
+    <description><![CDATA[<html><b><a href="https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/grijs/legend.png">Map legend download for BRT</a></b>
+    <p>▪Basisregistratie Topografie Achtergrondkaart (BRT-A) in grijskleuren - De BRT Achtergrondkaart is afgeleid uit TOP10NL uit de BRT met de straatnamen uit de Basisregistraties Adressen en Gebouwen (BAG).
+    <br>▪Basisregistratie Grootschalige Topografie (BGT) in pastelkleuren - De BGT is dé gedetailleerde grootschalige basiskaart (digitale kaart) van heel Nederland.</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.420,52.235,16</preview-location>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15"><!-- brt grijs -->
+
+      <update-delay>3M</update-delay>
+
+      <expression set="znew" type="int">z-4</expression>
+
+      <expression set="res" type="double">0.00028*12288000*0.5^znew</expression>
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-285401.92/(-256*res)</projection-offset-x>
+
+      <projection-offset-y>+903401.92/(-256*res)</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <key-url><![CDATA[https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/grijs/legend.png]]></key-url>
+      
+	  <server>https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0?service=wmts&layer=grijs&style=default&tilematrixset=EPSG:28992&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="16,17,18"><!-- bgt pastel -->
+
+      <update-delay>3M</update-delay>
+
+      <expression set="znew" type="int">z-4</expression>
+
+      <expression set="res" type="double">0.00028*12288000*0.5^znew</expression>
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-285401.92/(-256*res)</projection-offset-x>
+
+      <projection-offset-y>+903401.92/(-256*res)</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://service.pdok.nl/lv/bgt/wmts/v1_0?layer=pastelvisualisatie&style=default&tilematrixset=EPSG:28992&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="outline" layer="true">
+
+    <name>BGT Map (outline oriented)</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p>▪Basisregistratie Grootschalige Topografie (BGT) omtrekgericht - De BGT is dé gedetailleerde grootschalige basiskaart (digitale kaart) van heel Nederland.
+    <br>▪CBS Wijken en Buurten - Het bestand Wijk- en Buurtkaart bevat de geometrie van alle gemeenten, wijken en buurten in Nederland voor statistische kerncijfers.
+    <br>▪Bestuurlijke Gebieden - Overzicht van de bestuurlijke indeling van Nederland in gemeenten en provincies alsmede de landsgrens. Gegevens zijn afgeleid uit de Basisregistratie Kadaster (BRK).</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Kadaster and CBS</copyright>
+
+    <region>EURO</region>
+
+    <type>Other</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,18</preview-location>
+
+    <zoom-levels z="6,7,8"><!-- province -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?service=wms&REQUEST=GetMap&VERSION=1.1.1&FORMAT=image/png&BBOX={$bbox}&LAYERS=Provinciegebied&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&STYLES=Provinciegebied&TRANSPARENT=true]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="9,10,11,12"><!-- province & municipality -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?service=wms&REQUEST=GetMap&VERSION=1.1.1&FORMAT=image/png&BBOX={$bbox}&LAYERS=Provinciegebied,Gemeentegebied&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&STYLES=Provinciegebied,Gemeentegebied&TRANSPARENT=true]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="13,14,15"><!-- neighbourhood & subneighbourhood -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="delay" type="double">182</expression><!-- 182 gives update on the 183rd day of the year (1st or 2nd of July) -->
+
+      <expression set="year" type="int">floor(((floor(toDouble(unixtime())/3600/24)+0.5+0.125-delay)/365.25+1970))</expression><!-- will break in the year 2101 -->
+
+      <server><![CDATA[https://service.pdok.nl/cbs/gebiedsindelingen/{$year}/wms/v1_0?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&layers=wijk_niet_gegeneraliseerd,buurt_niet_gegeneraliseerd&SRS=EPSG:3857&STYLES=&WIDTH=256&HEIGHT=256&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="16,17,18"><!-- bgt omtrek -->
+
+      <update-delay>3M</update-delay>
+
+      <expression set="znew" type="int">z-4</expression>
+
+      <expression set="res" type="double">0.00028*12288000*0.5^znew</expression>
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-285401.92/(-256*res)</projection-offset-x>
+
+      <projection-offset-y>+903401.92/(-256*res)</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://service.pdok.nl/lv/bgt/wmts/v1_0?layer=omtrekgerichtevisualisatie&style=default&tilematrixset=EPSG:28992&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="bgtsymbol" layer="true">
+
+    <name>BGT Map (symbols)</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p>▪Basisregistratie Grootschalige Topografie (BGT) puntsymbolen - De BGT is dé gedetailleerde grootschalige basiskaart (digitale kaart) van heel Nederland.
+    <br>▪Bestuurlijke Gebieden Landsgrens - Overzicht van de bestuurlijke indeling van Nederland in gemeenten en provincies alsmede de landsgrens. Gegevens zijn afgeleid uit de Basisregistratie Kadaster (BRK).</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.8937,52.3728,20</preview-location><!-- Amsterdam -->
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17"><!-- landsgrens -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?service=wms&REQUEST=GetMap&VERSION=1.1.1&FORMAT=image/png&BBOX={$bbox}&LAYERS=Landgebied&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&STYLES=Landgebied&TRANSPARENT=true]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="18,19,20"><!-- bgt symbols -->
+
+      <update-delay>3M</update-delay>
+
+      <expression set="znew" type="int">z-4</expression>
+
+      <expression set="res" type="double">0.00028*12288000*0.5^znew</expression>
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-285401.92/(-256*res)</projection-offset-x>
+
+      <projection-offset-y>+903401.92/(-256*res)</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://service.pdok.nl/lv/bgt/wmts/v1_0?layer=icoonvisualisatie&style=default&tilematrixset=EPSG:28992&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="contour" layer="true">
+
+    <name>BRT Height Contours</name>
+
+    <description><![CDATA[<html><b><a href="https://service.pdok.nl/brt/top10nl/wms/v1_0?service=WMS&request=GetLegendGraphic&format=image/png&layer=hoogte&version=1.1.1">Map legend download for TOP10NL (height)</a></b>
+	<br><b><a href="https://service.pdok.nl/brt/top10nl/wms/v1_0?service=WMS&request=GetLegendGraphic&format=image/png&layer=relief&version=1.1.1">Map legend download for TOP10NL (relief)</a></b>
+    <p>▪Basisregistratie Topografie (BRT) TOP10NL hoogtelijnen - TOPNL-bestanden zijn objectgerichte topografische bestanden op diverse schaalniveaus. Deze bestanden maken onderdeel uit van de BRT. De TOPNL bestaat uit: TOP10NL, TOP50NL, TOP100NL, TOP250NL, TOP500NL en TOP1000NL.
+    <br>▪Waterschapsdata administratieve eenheden - Data van alle waterschappen in Nederland conform het Informatiemodel water (IMWA).</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Contours</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.420,52.235,16</preview-location>
+
+    <zoom-levels z="6,7,8,9,10,11,12"><!-- waterschap -->
+
+      <bbox-crs-code>EPSG:28992</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/hwh/waterschapsgrenzenimso/wms/v1_0?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=true&layers=waterschap&WIDTH=256&HEIGHT=256&CRS=EPSG%3A28992&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="13,14,15,16,17,18,19,20"><!-- hoogtelijnen -->
+
+      <bbox-crs-code>EPSG:28992</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/brt/top10nl/wms/v1_0?service=wms&request=GetMap&VERSION=1.1.1&FORMAT=image/png&BBOX={$bbox}&LAYERS=hoogte,relief&SRS=EPSG:28992&WIDTH=256&HEIGHT=256&STYLES=top10nl,top10nl&TRANSPARENT=true]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="ahn4dtm-shade">
+
+    <name>AHN4 (2020-2022) tiled hill-shade</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p><i>NB: Colour differences between individual map tiles.</i>
+    <p>Actueel Hoogtebestand Nederland (AHN4) DTM Hill-shade - Het AHN is een hoogtebestand vervaardigd door middel van laseraltimetrie.</html>]]></description>
+
+    <data-source><![CDATA[https://www.ahn.nl/]]></data-source>
+
+    <copyright>Rijkswaterstaat</copyright>
+
+    <region>EURO</region>
+
+    <type>Other</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,18</preview-location>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <bbox-crs-code>EPSG:28992</bbox-crs-code>
+
+      <update-delay>None</update-delay>
+
+      <server><![CDATA[https://ahn.arcgisonline.nl/arcgis/rest/services/AHNviewer/AHN4_DTM_50cm/ImageServer/exportImage?f=image&bandIds=0&renderingRule=%7B%22rasterFunction%22%3A%22Stretch%22%2C%22rasterFunctionArguments%22%3A%7B%22StretchType%22%3A6%2C%22Statistics%22%3A%5B%5D%2C%22DRA%22%3Atrue%2C%22UseGamma%22%3Afalse%2C%22Gamma%22%3A%5B1%5D%2C%22ComputeGamma%22%3Afalse%2C%22Min%22%3A0%2C%22Max%22%3A255%2C%22MinPercent%22%3A2%2C%22MaxPercent%22%3A2%2C%22Raster%22%3A%7B%22rasterFunction%22%3A%22Hillshade%22%7D%7D%2C%22variableName%22%3A%22Raster%22%2C%22outputPixelType%22%3A%22U8%22%7D&bbox={$bbox}&imageSR=28992&bboxSR=28992&size=256%2C256]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="ahn4dtm">
+
+    <name>AHN4 (2020-2022) DTM</name>
+
+    <description><![CDATA[<html>Actueel Hoogtebestand Nederland (AHN4) Digital Terrain Model (DTM) - Het AHN is een hoogtebestand vervaardigd door middel van laseraltimetrie.</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Rijkswaterstaat</copyright>
+
+    <region>EURO</region>
+
+    <type>Other</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.6302,51.9863,8</preview-location><!--  Zuidplaspolder -->
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17"><!-- ahn dtm -->
+
+      <bbox-crs-code>EPSG:28992</bbox-crs-code>
+
+      <update-delay>None</update-delay>
+
+      <server><![CDATA[https://ahn.arcgisonline.nl/arcgis/rest/services/AHNviewer/AHN4_DTM_50cm/ImageServer/exportImage?f=image&renderingRule=%7B%22rasterFunction%22%3A%22Color%20Ramp%20C%22%7D&bbox={$bbox}&imageSR=28992&bboxSR=28992&size=256%2C256]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="ahn4dsm">
+
+    <name>AHN4 (2020-2022) DSM</name>
+
+    <description><![CDATA[<html>Actueel Hoogtebestand Nederland (AHN4) Digital Surface Model (DSM) - Het AHN is een hoogtebestand vervaardigd door middel van laseraltimetrie.</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Rijkswaterstaat</copyright>
+
+    <region>EURO</region>
+
+    <type>Other</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.8937,52.3728,15</preview-location><!-- Amsterdam -->
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17"><!-- ahn dsm -->
+
+      <bbox-crs-code>EPSG:28992</bbox-crs-code>
+
+      <update-delay>None</update-delay>
+
+      <server><![CDATA[https://ahn.arcgisonline.nl/arcgis/rest/services/AHNviewer/AHN4_DSM_50cm/ImageServer/exportImage?f=image&renderingRule=%7B%22rasterFunction%22%3A%22Color%20Ramp%20C%22%7D&bbox={$bbox}&imageSR=28992&bboxSR=28992&size=256%2C256]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="lrphoto">
+
+    <name>Luchtfoto Actueel 25cm (summer)</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p>Landelijke Voorziening Beeldmateriaal (LVB) open luchtfoto - De orthofotomozaïeken zijn een samenstelling van afzonderlijke orthofoto's, in principe van de centrale gedeelten van iedere orthofoto. Daardoor is de omvalling in de mozaïeken zo klein mogelijk gehouden. De orthofotomozaïeken zijn landsdekkend.</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Satellite</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.420,52.235,16</preview-location>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17,18,19">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z-4</expression>
+
+      <expression set="res" type="double">0.00028*12288000*0.5^znew</expression>
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-285401.92/(-256*res)</projection-offset-x>
+
+      <projection-offset-y>+903401.92/(-256*res)</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server><![CDATA[https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0?layer=Actueel_ortho25&style=default&tilematrixset=EPSG:28992&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="label" layer="true">
+
+    <name>OSM/CBS Name Labels</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p>▪Luchtfotolabels - Luchtfotowegenlabels bedoeld als overlay voor de PDOK-luchtfoto op basis van data van OpenStreetMap.
+    <br>▪CBS Gemeente- en provincielabels.</html>]]></description>
+	
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>OpenStreetMap and CBS</copyright>
+
+    <region>EURO</region>
+
+    <type>Hybrid</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,18</preview-location><!-- Amersfoort -->
+
+    <zoom-levels z="6,7,8,9"><!-- cbs province labels -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="delay" type="double">182</expression><!-- 182 gives update on the 183rd day of the year (1st or 2nd of July) -->
+
+      <expression set="year" type="int">floor(((floor(toDouble(unixtime())/3600/24)+0.5+0.125-delay)/365.25+1970))</expression><!-- will break in the year 2101 -->
+
+      <server><![CDATA[https://service.pdok.nl/cbs/gebiedsindelingen/{$year}/wms/v1_0?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&layers=provincie_labelpoint&SRS=EPSG:3857&STYLES=&WIDTH=256&HEIGHT=256&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="10,11,12"><!-- cbs municipality labels -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="delay" type="double">182</expression><!-- 182 gives update on the 183rd day of the year (1st or 2nd of July) -->
+
+      <expression set="year" type="int">floor(((floor(toDouble(unixtime())/3600/24)+0.5+0.125-delay)/365.25+1970))</expression><!-- will break in the year 2101 -->
+
+      <server><![CDATA[https://service.pdok.nl/cbs/gebiedsindelingen/{$year}/wms/v1_0?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&layers=gemeente_labelpoint&SRS=EPSG:3857&STYLES=&WIDTH=256&HEIGHT=256&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="13,14,15,16,17,18"><!-- osm labels -->
+
+      <clear-color r="0" g="0" b="0" />
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z-4</expression>
+
+      <expression set="res" type="double">0.00028*12288000*0.5^znew</expression>
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-285401.92/(-256*res)</projection-offset-x>
+
+      <projection-offset-y>+903401.92/(-256*res)</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server><![CDATA[https://service.pdok.nl/bzk/luchtfotolabels/wmts/v1_0?layer=lufolabels&style=default&tilematrixset=EPSG:28992&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="walk" layer="true">
+
+    <name>Wandelroutes</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p>Landelijke wandelroutes - Langeafstand-wandelroutes (LAW) en routes van Stad te Voet, NS-wandelingen, OV-stappers en Streekpaden, geleverd vanuit de Landelijke Routedatabank van Stichting Wandelnet.</html>]]></description>
+
+    <data-source><![CDATA[https://www.pdok.nl/]]></data-source>
+
+    <copyright>Stichting Wandelnet</copyright>
+
+    <region>EURO</region>
+
+    <type>Roads</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.420,52.235,16</preview-location>
+
+    <zoom-levels z="6,7,8,9"><!-- overview walk -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/wandelnet/landelijke-wandelroutes/wms/v1_0?service=wms&REQUEST=GetMap&VERSION=1.1.1&FORMAT=image/png&BBOX={$bbox}&LAYERS=landelijke-wandelroutes&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&STYLES=landelijke-wandelroutes&TRANSPARENT=true]]></server>
+
+    </zoom-levels>
+
+    <zoom-levels z="10,11,12,13,14,15,16"><!-- walk -->
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/wandelnet/landelijke-wandelroutes/wms/v1_0?service=wms&REQUEST=GetMap&VERSION=1.1.1&FORMAT=image/png&BBOX={$bbox}&LAYERS=stad-te-voet,ov-stappers,ns-wandelingen,streekpaden,landelijke-wandelroutes&SRS=EPSG:3857&WIDTH=256&HEIGHT=256&STYLES=stad-te-voet,ov-stappers,ns-wandelingen,streekpaden,landelijke-wandelroutes&TRANSPARENT=true]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="bike" layer="true">
+
+    <name>Fietsroutes</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p>Landelijke Fietsroutes - Bestaande Landelijke Fietsroutes, geleverd vanuit de Landelijke Routedatabank van Stichting Landelijk Fietsplatform.</html>]]></description>
+
+    <copyright>Stichting Landelijk Fietsplatform</copyright>
+
+    <region>EURO</region>
+
+    <type>Roads</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>4.420,52.235,16</preview-location>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15">
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://service.pdok.nl/fietsplatform/landelijke-fietsroutes/wms/v1_0?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&layers=landelijke-fietsroutes&CRS=EPSG:3857&STYLES=landelijke-fietsroutes&WIDTH=256&HEIGHT=256&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+</aqx>

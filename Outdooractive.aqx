@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="9">
+ 
+  <name>NMA Maps</name>
+  
+  <description>NMA topo of Austria, Denmark, Finland, Germany, Netherlands, New Zealand, Norway, Spain and Sweden with unknown update frequency</description>
+ 
+  <source id="nma">
+ 
+    <name>National Mapping Agency Topo</name>
+
+    <description><![CDATA[<html>Map legends not linked.
+    <p>Supplied by intermediary. Unknown update frequency can be much less often than data obtained directly from national mapping agencies of Austria*, Denmark, Finland, Germany, Netherlands, New Zealand*, Norway*, Spain and Sweden*.
+    <p>* Most detailed scale 1:25000 not available for Austria, New&nbsp;Zealand, Norway and Sweden.</html>]]></description>
+
+    <data-source><![CDATA[https://regio.outdooractive.com/oar-eifelverein/de/tourenplaner/]]></data-source>
+
+    <copyright>National mapping agencies</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <preview-location>9.9019,49.8431,15</preview-location>
+
+    <zoom-levels z="3,4,5,6,7,8,9,10,11,12,13,14,15,16,17">
+
+      <update-delay>1Y</update-delay>
+ 
+      <server><![CDATA[https://w1.oastatic.com/map/v1/topo/pro/{$z}/{$x}/{$y}/t.png?project=oar-eifelverein]]></server>
+      <server><![CDATA[https://w2.oastatic.com/map/v1/topo/pro/{$z}/{$x}/{$y}/t.png?project=oar-eifelverein]]></server>
+      <server><![CDATA[https://w3.oastatic.com/map/v1/topo/pro/{$z}/{$x}/{$y}/t.png?project=oar-eifelverein]]></server>
+ 
+    </zoom-levels>
+ 
+  </source>
+
+</aqx>

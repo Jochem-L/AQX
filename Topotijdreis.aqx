@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="9">
+
+  <name>Netherlands Historical Maps/10Y</name>
+
+  <description>Historic topographic maps by Kadaster from 1815 to present for selected years from topotijdreis.nl. Disalignments are possible due to problems with georeferencing. The map legends of the layers are not made available.</description>
+
+  <source id="2020">
+
+    <name>2020</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_2020/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+<source id="2010">
+
+    <name>2010</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_2010/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="2000">
+
+    <name>2000</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_2000/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1990">
+
+    <name>1990</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1990/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1980">
+
+    <name>1980</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1980/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1970">
+
+    <name>1970</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1970/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1960">
+
+    <name>1960</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1960/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1950">
+
+    <name>1950</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1940">
+
+    <name>1940</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1940/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1930">
+
+    <name>1930</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1930/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1920">
+
+    <name>1920</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1920/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1910">
+
+    <name>1910</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1910/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1900">
+
+    <name>1900</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1900/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1890">
+
+    <name>1890</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1890/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1870">
+
+    <name>1870</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1870/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1850">
+
+    <name>1850</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1850/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1830">
+
+    <name>1830</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1830_1849/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="1815">
+
+    <name>1815</name>
+
+    <data-source><![CDATA[https://topotijdreis.nl/]]></data-source>
+
+    <copyright>Kadaster</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <outline>2,50 2,56 8,56 8,50</outline>
+
+    <preview-location>5.3872,52.1552,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11">
+
+      <update-delay>None</update-delay>
+
+      <expression set="res">3251.20650190100408*0.5^z</expression><!-- source: 11611451.792503586*0.00028=‭3251.20650190100408 https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-code>EPSG:28992</projection-code>
+
+      <projection-resolution>res</projection-resolution>
+
+      <projection-offset-x>-30515500/(-256*res)</projection-offset-x><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <projection-offset-y>+31112400/(-256*res)</projection-offset-y><!-- source: https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1950/MapServer/WMTS/1.0.0/WMTSCapabilities.xml -->
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_1816_1819/MapServer/tile/{$z}/{$y}/{$x}?blankTile=false</server>
+
+    </zoom-levels>
+
+  </source>
+
+</aqx>

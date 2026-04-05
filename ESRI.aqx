@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="9">
+ 
+  <name>ESRI services</name>
+  
+  <description>Maps provided by ArcGIS producer ESRI.</description>
+
+  <source id="hillshade" layer="true">
+ 
+    <name>ERSI World Hill-shade</name>
+
+    <description><![CDATA[<html>Map legend not linked
+    <p>World map multi-directional hill-shade - This map portrays elevation as an artistic hillshade. This map is designed to be used as a backdrop for topographical, soil, hydro, landcover or other outdoor recreational maps. The map was compiled from a variety of <a href="https://www.arcgis.com/home/item.html?id=3af669838f594b378f90c10f98e46a7f">sources</a> from several data providers. The basemap has global coverage down to a scale of ~1:72000. In select areas of the United States and Europe, coverage is available down to ~1:9000.</html>]]></description>
+
+    <data-source><![CDATA[https://www.arcgis.com/home/webmap/viewer.html]]></data-source>
+
+    <copyright>ESRI et al.</copyright>
+
+    <region>WORLD</region>
+
+    <type>Hillshade</type>
+
+    <preview-location>86.9253,27.9881,11</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15">
+
+      <update-delay>1Y</update-delay>
+ 
+      <server><![CDATA[https://server.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{$z}/{$y}/{$x}]]></server>
+ 
+    </zoom-levels>
+ 
+  </source>
+
+</aqx>

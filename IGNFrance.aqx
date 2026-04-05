@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aqx version="9">
+
+  <name>France Maps IGN</name>
+
+  <description>Topographic maps and other data by IGN often including overseas territories. For map legend of a layer, go to Details.</description>
+
+  <source id="classique">
+
+    <name>Classic Map</name>
+
+	<description><![CDATA[<html><b><a href="https://www.geoportail.gouv.fr/depot/layers/GEOGRAPHICALGRIDSYSTEMS.MAPS/legendes/GEOGRAPHICALGRIDSYSTEMS.MAPS_10k-legend.png">Map legend download for Classic Map</a></b>
+	<br><b><a href="https://www.geoportail.gouv.fr/depot/layers/GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER/legendes/GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER_1250-legend.png">Map legend download for CFR</a></b>
+	<p>▪Cartes IGN classiques - Cinq types de cartes adaptées aux échelles d'affichage : cartes à grande échelle, cartes topographiques, cartes de tourisme, cartes administratives et routières, cartes à petite échelle.
+    <br>▪Carte France Raster (CFR) - Carte à grande échelle spécialement adaptée à l'affichage de données urbaines.</html>]]></description>
+    
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <preview-location>2.6028,46.4939,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="19">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="carte">
+
+    <name>Standard Map</name>
+
+	<description><![CDATA[<html><b><a href="https://www.geoportail.gouv.fr/depot/layers/GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD/legendes/GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD-legend-GE.png">Map legend download for Standard Map</a></b>
+	<br><b><a href="https://www.geoportail.gouv.fr/depot/layers/GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER/legendes/GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER_1250-legend.png">Map legend download for CFR</a></b>
+	<p>▪Carte IGN - Fond cartographique proposé par l'Institut national de l'information géographique et forestière (IGN).
+    <br>▪Carte France Raster (CFR) - Carte à grande échelle spécialement adaptée à l'affichage de données urbaines.</html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <preview-location>2.6028,46.4939,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="19">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="plan">
+
+    <name>Navigation Plan</name>
+
+ 	<description><![CDATA[<html>Map legend not linked
+	<p>▪Plan IGN - Plan IGN permet de naviguer en France, sur tout le territoire métropolitain et une partie des DOM, à toutes les échelles.
+    <br>▪Carte France Raster (CFR) - Carte à grande échelle spécialement adaptée à l'affichage de données urbaines.</html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <preview-location>2.6028,46.4939,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.PLANIGN&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="19">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="raster">
+
+    <name>CFR Pale Colour Large-Scale Map</name>
+
+    <description><![CDATA[<html><b><a href="https://www.geoportail.gouv.fr/depot/layers/GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER/legendes/GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER_1250-legend.png">Map legend download</a></b>
+    <p>Carte France Raster (CFR) - Carte à grande échelle spécialement adaptée à l'affichage de données urbaines.</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <preview-location>2.6028,46.4939,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17,18,19">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.FRANCERASTER&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="gris">
+
+    <name>Grey Classic Map</name>
+
+ 	<description><![CDATA[<html>Map legend not linked
+    <p>Carte IGN (niveaux de gris) - Fond cartographique en niveaux de gris proposé par l'Institut national de l'information géographique et forestière (IGN).</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Topo</type>
+
+    <preview-location>2.6028,46.4939,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.NIVEAUXGRIS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="photo">
+
+    <name>Aerial Imagery</name>
+
+ 	<description><![CDATA[<html>Map legend not linked
+    <p>Photographies aériennes - Prises de vues satellitaires ou aériennes des territoires.</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Satellite</type>
+
+    <preview-location>2.6028,46.4939,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=ORTHOIMAGERY.ORTHOPHOTOS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="littorale">
+
+    <name>Coastal Map</name>
+		
+	<description><![CDATA[<html>Map legend not linked
+    <p><i>Not intended for maritime navigation.</i>
+    <p>Carte littorale - Assemblage des cartes marines du Service hydrographique et océanographique de la marine (SHOM) et des cartes terrestres de l'IGN. 
+    <br><i>Attention : Cette donnée n'est pas destinée à la navigation maritime.</i></html>]]></description>
+
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Nautical</type>
+
+    <preview-location>0.0383,49.4957,13</preview-location -->
+
+    <zoom-levels z="0,1,2,3,4,5">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15,16">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.COASTALMAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="etatmajor">
+
+    <name>Historical Map (1820-1866)</name>
+
+    <description><![CDATA[<html><b><a href="https://www.geoportail.gouv.fr/depot/layers/GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40/legendes/GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40-legend.pdf">Map legend download</a></b>
+    <p>Carte de l'état-major (1820-1866) - Carte française en couleurs du XIXè siècle en couleurs superposable aux cartes et données modernes.</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+    
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Historical</type>
+
+    <preview-location>2.6028,46.4939,15</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15">
+
+      <update-delay>None</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="relief">
+
+    <name>Elevation Map</name>
+
+	<description><![CDATA[<html>Map legend not linked
+    <p>Carte du relief - Représentation de l'altitude sous forme de teintes hypsométriques (fausses couleurs).</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+	
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Other</type>
+
+    <preview-location>6.8519,45.8394,11</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5">
+
+      <update-delay>1Y</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14">
+
+      <update-delay>None</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=ELEVATION.SLOPES&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="estompage" layer="true">
+
+    <name>Hill-shade</name>
+
+	<description><![CDATA[<html>Map legend not linked
+    <p>Estompage - Ombrage calculé à partir des données altimétriques BD ALTI v1 de l'IGN permettant de mieux appréhender le relief.</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Hillshade</type>
+
+    <preview-location>6.8519,45.8394,11</preview-location>
+
+    <zoom-levels z="6,7,8,9,10,11,12,13,14,15">
+
+      <update-delay>None</update-delay>
+
+      <expression set="znew" type="int">z</expression>
+
+      <projection-code>EPSG:3857</projection-code>
+
+      <projection-resolution>156543.033928041*0.5^znew</projection-resolution><!-- source: https://geoservices.ign.fr/documentation/geoservices/wmts.html -->
+
+      <projection-offset-x>+0.5*2^znew</projection-offset-x>
+
+      <projection-offset-y>-0.5*2^znew</projection-offset-y>
+
+      <tiles-size>256</tiles-size>
+
+      <server>https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW&style=estompage_grayscale&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={$znew}&TileCol={$x}&TileRow={$y}</server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="avalanche_t" layer="true">
+
+    <name>Reported Avalanches</name>
+
+    <description><![CDATA[<html><b><a href="http://vmapfishbda.grenoble.cemagref.fr/cgi-bin/mapserv?map=/var/www/prod/test3857.map&version=1.1.1&service=WMS&request=GetLegendGraphic&layer=zont&format=image/png&STYLE=default">Map legend download</a></b>
+    <p><i>For awareness, not intended to indicate risk.</i>
+    <p>Avalanches (CLPA) témoignages - Carte de localisation des phénomènes d'avalanches (CLPA) basée sur des photo-interprétations. Cette carte a pour vocation de sensibiliser la population sur l'existence de zones où des avalanches se sont produites dans le passé. Elle n'indique pas l'aléa ou les risques d'avalanches.</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Other</type>
+
+    <preview-location>6.8519,45.8394,11</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/proxy/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=TRUE&LAYERS=IRSTEA_CLPA.TEMOIGNAGE&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&STYLES=&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+  <source id="avalanche_i" layer="true">
+
+    <name>Photo-analysis of Avalanches</name>
+
+    <description><![CDATA[<html><b><a href="http://vmapfishbda.grenoble.cemagref.fr/cgi-bin/mapserv?map=/var/www/dev/clpapi.map&version=1.1.1&service=WMS&request=GetLegendGraphic&layer=linpi&format=image/png&STYLE=default">Map legend download</a></b>
+    <p><i>For awareness, not intended to indicate risk.</i>
+    <p>Avalanches (CLPA) interprétation des phénomènes passés - Carte de localisation des phénomènes d'avalanche (CLPA) qui s'appuie sur le recueil et l'analyse de témoignages sur les phénomènes d'avalanches constatés. Cette carte a pour vocation de sensibiliser la population sur l'existence de zones où des avalanches se sont produites dans le passé. Elle n'indique pas l'aléa ou les risques d'avalanches.</html>]]></description>
+	
+    <data-source><![CDATA[https://www.geoportail.gouv.fr/]]></data-source>
+
+    <copyright>IGN France</copyright>
+
+    <region>EURO</region>
+
+    <type>Other</type>
+
+    <preview-location>6.8519,45.8394,11</preview-location>
+
+    <zoom-levels z="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18">
+
+      <bbox-crs-code>EPSG:3857</bbox-crs-code>
+
+      <update-delay>1Y</update-delay>
+
+      <server><![CDATA[https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/proxy/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=TRUE&LAYERS=IRSTEA_CLPA.INTER&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&STYLES=&BBOX={$bbox}]]></server>
+
+    </zoom-levels>
+
+  </source>
+
+</aqx>
