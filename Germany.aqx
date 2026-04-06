@@ -110,6 +110,8 @@
 
       <update-delay>6M</update-delay>
 
+      <key-url><![CDATA[https://sgx.geodatenzentrum.de/wms_topplus_open?styles=&format=image%2Fpng&layer=web&request=GetLegendGraphic&version=1.1.1&sld_version=1.1.0&service=WMS]]></key-url>
+
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
       <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
@@ -140,6 +142,8 @@
 
       <update-delay>6M</update-delay>
 
+      <key-url><![CDATA[https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col]]></key-url>
+      
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
       <server><![CDATA[http://www.wms.nrw.de/geobasis/wms_nw_dtk?LAYERS=nw_dtk_col&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS=EPSG:3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
