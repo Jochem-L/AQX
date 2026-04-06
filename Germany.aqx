@@ -29,6 +29,8 @@
 
       <update-delay>6M</update-delay>
 
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK1000&SERVICE=WMS&VERSION=1.1.1]]></key-url>
+
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
       <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
@@ -39,6 +41,8 @@
 
       <update-delay>6M</update-delay>
 
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK500&SERVICE=WMS&VERSION=1.1.1]]></key-url>
+
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
       <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
@@ -48,6 +52,8 @@
     <zoom-levels z="12">
 
       <update-delay>6M</update-delay>
+
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK250&SERVICE=WMS&VERSION=1.1.1]]></key-url>
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
@@ -91,7 +97,7 @@
 
     <name>DTK Nordrhein-Westfalen Map</name>
 
-    <description><![CDATA[<html><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk25?request=GetLegendGraphic&format=image/png&layer=nw_dtk25_col">Map legend download</a></b>
+    <description><![CDATA[<html><b><a href="https://www.wms.nrw.de/geobasis/wms_nw_dtk?request=GetLegendGraphic&format=image/png&layer=nw_dtk_col">Map legend download</a> for most zoom levels</b>
     <p>Digitale Topographische Karten (DTK) werden in der Maßstabsreihe der amtlichen Kartographie im Rasterformat aus den Digitalen Landschafts- und Geländemodellen sowie ergänzenden Informationen erzeugt.</html>]]></description>
 
     <data-source><![CDATA[https://www.geoportal.de/]]></data-source>
@@ -110,7 +116,7 @@
 
       <update-delay>6M</update-delay>
 
-      <key-url><![CDATA[https://sgx.geodatenzentrum.de/wms_topplus_open?styles=&format=image%2Fpng&layer=web&request=GetLegendGraphic&version=1.1.1&sld_version=1.1.0&service=WMS]]></key-url>
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK1000&SERVICE=WMS&VERSION=1.1.1]]></key-url>
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
@@ -122,6 +128,8 @@
 
       <update-delay>6M</update-delay>
 
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK500&SERVICE=WMS&VERSION=1.1.1]]></key-url>
+
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
       <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
@@ -131,6 +139,8 @@
     <zoom-levels z="12">
 
       <update-delay>6M</update-delay>
+
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK250&SERVICE=WMS&VERSION=1.1.1]]></key-url>
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
@@ -176,6 +186,8 @@
 
       <update-delay>6M</update-delay>
 
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK1000&SERVICE=WMS&VERSION=1.1.1]]></key-url>
+
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
       <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK1000&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
@@ -186,6 +198,8 @@
 
       <update-delay>6M</update-delay>
 
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK500&SERVICE=WMS&VERSION=1.1.1]]></key-url>
+
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
       <server><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?FORMAT=image%2Fpng&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=DTK500&SRS=EPSG%3A3857&BBOX={$bbox}&WIDTH=256&HEIGHT=256]]></server>
@@ -195,6 +209,8 @@
     <zoom-levels z="12">
 
       <update-delay>6M</update-delay>
+
+      <key-url><![CDATA[https://sg.geodatenzentrum.de/wms_dtk_bkg?request=GetLegendGraphic&format=image/png&layer=DTK250&SERVICE=WMS&VERSION=1.1.1]]></key-url>
 
       <bbox-crs-code>EPSG:3857</bbox-crs-code>
 
